@@ -1,0 +1,12 @@
+#!/bin/bash
+/system/install supervisor
+cat <<\EOF > /etc/supervisor/conf.d/uploaderLCD.conf
+[program:uploaderLCD]
+command=/usr/bin/python /do/uploaderLCD/python/test.py
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/uploaderLCD.log
+redirect_stderr=true
+EOF
+supervisorctl reread
+supervisorctl update

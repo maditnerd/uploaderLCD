@@ -1,0 +1,3 @@
+#!/bin/bash
+/pi/install adafruitLCD
+/pi/install platformio
