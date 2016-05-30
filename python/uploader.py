@@ -13,7 +13,7 @@ def loadSketches(lcd, sketch):
     lcd.clear()
     lcd.set_color(1.0, 1.0, 0.0)
     lcd.message("Loading:\n" + str(sketch))
-    returnValue = os.system("/do/platformio/run " + str(sketch))
+    returnValue = os.system("/do/platformio/runNano " + str(sketch))
     if(returnValue != 0):  # 512
         lcd.clear()
         lcd.set_color(1.0, 0.0, 0.0)

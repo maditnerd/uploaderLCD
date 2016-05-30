@@ -1,3 +1,5 @@
 #!/bin/bash
+/pi/install supervisor
 /pi/install adafruitLCD
 /pi/install platformio
+/do/supervisor/create uploaderLCD /do/uploaderLCD/check
