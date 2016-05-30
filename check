@@ -1,1 +1,1 @@
-exec python -u /do/uploaderLCD/python/uploader.py
+/usr/bin/python /do/uploaderLCD/python/uploader.py

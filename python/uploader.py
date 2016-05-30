@@ -1,5 +1,5 @@
-#!/usr/bin/python
-# Example using a character LCD plate.
+#!/usr/bin/env python
+# UploaderLCD
 import time
 import os
 import Adafruit_CharLCD as LCD
